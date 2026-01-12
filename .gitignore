@@ -20,6 +20,12 @@
 # production
 /build
 
+
+# dotenv environment variable files
+.env
+.env.local
+
+
 # misc
 .DS_Store
 *.pem
@@ -30,7 +36,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-
+.partykit
 
 # vercel
 .vercel

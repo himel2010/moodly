@@ -14,16 +14,8 @@ import { fetchRecommendations } from "@/lib/fetchRecommendations"
 import "ldrs/react/Ring2.css"
 import Image from "next/image"
 
-// Import the new mobile component
-
 import { Play } from "lucide-react"
-import SearchBar from "./SearchBar"
 import { useSearchStore } from "@/lib/store"
-import { randomUUID } from "crypto"
-import { Button } from "./ui/button"
-
-const movieCache = new Map<string, Movie[]>()
-const songCache = new Map<string, Track[]>()
 
 interface DashboardProps {
   movies: Movie[]
@@ -267,8 +259,6 @@ export default function Dashboard({ movies, songs }: DashboardProps) {
                     </div>
                   </div>
                 </section>
-                <Button onClick={() => setTheme("restless")}>Restless</Button>
-                <Button onClick={() => setTheme("energetic")}>Energetic</Button>
 
                 <section className="magazine-rows w-full max-w-6xl">
                   {activeTab === "movies" ? (
