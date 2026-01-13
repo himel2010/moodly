@@ -2,6 +2,8 @@
 
 Mood based media hub
 
+*Developed as part of CSE471 coursework at BRAC University*
+
 ## Tech Stack
 Next.js • PostgreSQL • Supabase • Ingest
 
@@ -24,5 +26,3 @@ npm install
 npm run dev
 ```
 
-## Status
-BRAC University CSE471 project
